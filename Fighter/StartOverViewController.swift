@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol StartOverViewControllerDelegate {
+    func didClickStartOverButton(_ viewController : StartOverViewController);
+}
+
 class StartOverViewController: UIViewController {
 
+    var delegate : StartOverViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +38,9 @@ class StartOverViewController: UIViewController {
     }
     */
 
+    @IBAction func didClickStartOver(_ sender: Any) {
+        
+        self.delegate?.didClickStartOverButton(self)
+        
+    }
 }

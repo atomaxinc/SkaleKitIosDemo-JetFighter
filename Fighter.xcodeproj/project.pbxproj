@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C28F30B00E37E00BC73F994 /* Pods_Fighter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD39D5550769808BA8BA50B7 /* Pods_Fighter.framework */; };
 		9481573C1E799E9D00E56625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481573B1E799E9D00E56625 /* AppDelegate.swift */; };
 		9481573E1E799E9D00E56625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481573D1E799E9D00E56625 /* ViewController.swift */; };
 		948157411E799E9D00E56625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9481573F1E799E9D00E56625 /* Main.storyboard */; };
 		948157431E799E9D00E56625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948157421E799E9D00E56625 /* Assets.xcassets */; };
 		948157461E799E9D00E56625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948157441E799E9D00E56625 /* LaunchScreen.storyboard */; };
+		9481574E1E79A8B900E56625 /* EnemyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481574D1E79A8B900E56625 /* EnemyEngine.swift */; };
+		94A94EAF1E79C0E800E37687 /* SoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A94EAE1E79C0E800E37687 /* SoundEffect.mp3 */; };
+		94A94EB11E7AD71700E37687 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A94EB01E7AD71700E37687 /* AudioToolbox.framework */; };
+		94A94EB31E7AD77900E37687 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A94EB21E7AD77900E37687 /* AVFoundation.framework */; };
+		94A94EB51E7AD92F00E37687 /* MeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A94EB41E7AD92F00E37687 /* MeLayer.swift */; };
+		94A94EBB1E7AE38400E37687 /* StartOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A94EBA1E7AE38400E37687 /* StartOverViewController.swift */; };
+		94A94EBD1E7AE66000E37687 /* EnemyLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A94EBC1E7AE66000E37687 /* EnemyLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		948157421E799E9D00E56625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948157451E799E9D00E56625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		948157471E799E9D00E56625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9481574D1E79A8B900E56625 /* EnemyEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyEngine.swift; sourceTree = "<group>"; };
+		94A94EAE1E79C0E800E37687 /* SoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundEffect.mp3; sourceTree = "<group>"; };
+		94A94EB01E7AD71700E37687 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		94A94EB21E7AD77900E37687 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		94A94EB41E7AD92F00E37687 /* MeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeLayer.swift; sourceTree = "<group>"; };
+		94A94EBA1E7AE38400E37687 /* StartOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartOverViewController.swift; sourceTree = "<group>"; };
+		94A94EBC1E7AE66000E37687 /* EnemyLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyLayer.swift; sourceTree = "<group>"; };
+		AD39D5550769808BA8BA50B7 /* Pods_Fighter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fighter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E3002D67F17192AA3138C5 /* Pods-Fighter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fighter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fighter/Pods-Fighter.release.xcconfig"; sourceTree = "<group>"; };
+		CF422E607A4D4F4B2AFB8B0F /* Pods-Fighter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fighter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fighter/Pods-Fighter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A94EB31E7AD77900E37687 /* AVFoundation.framework in Frameworks */,
+				94A94EB11E7AD71700E37687 /* AudioToolbox.framework in Frameworks */,
+				7C28F30B00E37E00BC73F994 /* Pods_Fighter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		608057A2DE7BAAF331133FC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94A94EB21E7AD77900E37687 /* AVFoundation.framework */,
+				94A94EB01E7AD71700E37687 /* AudioToolbox.framework */,
+				AD39D5550769808BA8BA50B7 /* Pods_Fighter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F9B917FCEA464281EBCBEAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF422E607A4D4F4B2AFB8B0F /* Pods-Fighter.debug.xcconfig */,
+				B1E3002D67F17192AA3138C5 /* Pods-Fighter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9481572F1E799E9C00E56625 = {
 			isa = PBXGroup;
 			children = (
 				9481573A1E799E9D00E56625 /* Fighter */,
 				948157391E799E9D00E56625 /* Products */,
+				6F9B917FCEA464281EBCBEAA /* Pods */,
+				608057A2DE7BAAF331133FC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +98,15 @@
 			children = (
 				9481573B1E799E9D00E56625 /* AppDelegate.swift */,
 				9481573D1E799E9D00E56625 /* ViewController.swift */,
+				94A94EBA1E7AE38400E37687 /* StartOverViewController.swift */,
 				9481573F1E799E9D00E56625 /* Main.storyboard */,
 				948157421E799E9D00E56625 /* Assets.xcassets */,
 				948157441E799E9D00E56625 /* LaunchScreen.storyboard */,
 				948157471E799E9D00E56625 /* Info.plist */,
+				94A94EAE1E79C0E800E37687 /* SoundEffect.mp3 */,
+				9481574D1E79A8B900E56625 /* EnemyEngine.swift */,
+				94A94EBC1E7AE66000E37687 /* EnemyLayer.swift */,
+				94A94EB41E7AD92F00E37687 /* MeLayer.swift */,
 			);
 			path = Fighter;
 			sourceTree = "<group>";
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9481574A1E799E9D00E56625 /* Build configuration list for PBXNativeTarget "Fighter" */;
 			buildPhases = (
+				0F8961691C9A6D521E50E1D8 /* 📦 Check Pods Manifest.lock */,
 				948157341E799E9D00E56625 /* Sources */,
 				948157351E799E9D00E56625 /* Frameworks */,
 				948157361E799E9D00E56625 /* Resources */,
+				CB910F3BE8CF1FE130F5BC2E /* 📦 Embed Pods Frameworks */,
+				A1D3DD565F1A98605E94911F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,10 +177,59 @@
 				948157461E799E9D00E56625 /* LaunchScreen.storyboard in Resources */,
 				948157431E799E9D00E56625 /* Assets.xcassets in Resources */,
 				948157411E799E9D00E56625 /* Main.storyboard in Resources */,
+				94A94EAF1E79C0E800E37687 /* SoundEffect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8961691C9A6D521E50E1D8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D3DD565F1A98605E94911F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fighter/Pods-Fighter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB910F3BE8CF1FE130F5BC2E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fighter/Pods-Fighter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		948157341E799E9D00E56625 /* Sources */ = {
@@ -138,7 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9481573E1E799E9D00E56625 /* ViewController.swift in Sources */,
+				94A94EBB1E7AE38400E37687 /* StartOverViewController.swift in Sources */,
+				94A94EBD1E7AE66000E37687 /* EnemyLayer.swift in Sources */,
+				9481574E1E79A8B900E56625 /* EnemyEngine.swift in Sources */,
 				9481573C1E799E9D00E56625 /* AppDelegate.swift in Sources */,
+				94A94EB51E7AD92F00E37687 /* MeLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +360,12 @@
 		};
 		9481574B1E799E9D00E56625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF422E607A4D4F4B2AFB8B0F /* Pods-Fighter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Z7XRG6H79;
 				INFOPLIST_FILE = Fighter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atoamxinc.live.Fighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,10 +375,12 @@
 		};
 		9481574C1E799E9D00E56625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E3002D67F17192AA3138C5 /* Pods-Fighter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Z7XRG6H79;
 				INFOPLIST_FILE = Fighter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atoamxinc.live.Fighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +407,7 @@
 				9481574C1E799E9D00E56625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
